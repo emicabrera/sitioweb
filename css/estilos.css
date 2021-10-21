@@ -1,0 +1,233 @@
+html,body{
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    color: #eceeef !important;
+    font-size: 1em;
+}
+nav{
+    z-index: 10;
+}
+ /* =========================== Loader ============================ */
+.loader-container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:9999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.loader-img{
+    background-image: url('../img/loader.gif');
+    height: 12em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.loader-txt{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    font-weight: 900;
+    color: #9595a0;
+    opacity: 0.8;
+}
+
+/* ========================== Personalizacion Coverr ================== */
+.video-container{position: fixed !important;}
+.capa-oscura{position: fixed !important; /* Da tonalidad oscura a la pagina entera para que sea mas legible y no se pierda en el video */
+    bottom: 0%;
+    left: 0%;
+    /*height: 110%;*/
+    width: 110%;
+    overflow: hidden;
+    background: #000;
+    opacity: 0.4;
+    height: : calc(100% + 56px);
+    height: -moz-calc(100% + 56px);
+    height: -webkit-calc(100% + 56px);
+    }
+ #coverr{
+ 	height: 0;
+ }
+.background-opacity{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #2d2415;
+    display: block;
+    opacity: 0.4;
+}
+
+video{
+    position: fixed !important;
+}
+
+/* ========================== Header =============================== */
+.masthead{
+	z-index: 9;
+	position:relative;
+}
+header.masthead {
+  background-image: url("../img/diseño-web.jpg");
+ }
+/*
+#services{
+	z-index: 9;
+	position:relative;
+}*/
+
+/* ========================= Servicios ===============================*/
+.text-primary{
+    color:#c7a323;
+}
+
+/* ========================= Sobre Mi ================================*/
+.frase{
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
+}
+
+/* ========================= Historia =============================== */
+.timeline > li .timeline-image {
+	background-color: #cca82d;
+}
+
+/* ========================= Portfolio =============================== */
+#templates{
+    text-align: center;
+}
+#templates .portfolio-texto{
+    margin-top: 12rem;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+/* ========================= Contacto =============================== */
+
+
+/* ========================== Botones ===============================*/
+.btn-xl{
+    background-color:rgba(199, 163, 35, 0.5);
+    border-color: #8a6d3b;
+
+}
+.btn-xl:hover{
+    background-color: rgba(199, 163, 35,1);
+    border-color: #8a6d3b;
+}
+
+/* ======================= Texto ================================ */
+.text-muted{
+    color: #eceeef !important;
+    font-family: 'Roboto', sans-serif;
+}
+.text-muted.negro-1{
+    color: #333333 !important;
+}
+.text-muted.negro-2{
+    color: #636c72 !important;
+}
+
+/* ======================= Sombras ================================== */
+.z-depth-0 {box-shadow: none !important;}
+.z-depth-1{box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
+.z-depth-1-half{box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);}
+.z-depth-2 {box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.z-depth-3 {box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);}
+.z-depth-4{box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);}
+.z-depth-5 {box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);}
+
+/* ======================= MediaQuery =============================== */
+@media only screen and (max-width: 767px) {
+    header.masthead .intro-text {
+        padding-top: 70%;
+    }
+    header.masthead .intro-text .intro-heading {
+        font-size: 48px;
+    }
+    .portfolio-modal .modal-content h2{
+        font-size: 2em;
+    }
+
+    #templates .portfolio-texto{
+        margin-top: 7rem;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .background{
+        background-image: url('../img/portfolio/fondo-modal.jpg');
+        background-size: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    .modal-content .container .row{margin-top: 10%;}
+    .close-modal{z-index: 1;}
+}
+
+/*Solución temporal de contenedor de navbar*/
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+.navbar-toggler {
+    z-index: 1;
+}
+
+/*Para Politicas de Privacidad y Condiciones de Uso*/
+.fondo{
+    background-image: url('../video/diseño-web.jpg');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#top-page{
+    margin-top: 50px;
+}
+.padding-superior{
+    padding-top: 50px;
+}
+
+.txt-amarillo{
+    color: #fed136;
+}    
+.btnVolver{
+    font-size: 90%;
+    padding: .75em 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/*Prallax*/
+.parallax { 
+    /* The image used */
+    /*background-image: url("../img/portfolio/parallax.jpg");*/
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
